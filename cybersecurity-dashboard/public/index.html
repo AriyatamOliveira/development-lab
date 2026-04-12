@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <h1><i class="fas fa-shield-alt"></i> Cybersecurity Dashboard</h1>
+                <div class="status-indicator" id="connection-status">
+                    <span class="status-dot disconnected"></span>
+                    <span class="status-text">Disconnected</span>
+                </div>
+            </div>
+            <div class="header-right">
+                <button id="scan-wifi-btn" class="btn btn-primary">
+                    <i class="fas fa-wifi"></i> Scan WiFi
+                </button>
+                <button id="scan-bluetooth-btn" class="btn btn-primary">
+                    <i class="fab fa-bluetooth"></i> Scan Bluetooth
+                </button>
+                <div class="system-info">
+                    <span id="current-time"></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Dashboard -->
+        <main class="main-content">
+            <!-- Stats Overview -->
+            <section class="stats-overview">
+                <div class="stat-card">
+                    <div class="stat-icon bg-blue">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="wifi-count">0</h3>
+                        <p>WiFi Networks</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-purple">
+                        <i class="fab fa-bluetooth"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="bluetooth-count">0</h3>
+                        <p>Bluetooth Devices</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-red">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="threat-count">0</h3>
+                        <p>Active Threats</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon bg-green">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="safe-devices">0</h3>
+                        <p>Safe Devices</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Network Panels -->
+            <div class="panel-grid">
+                <!-- WiFi Networks Panel -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-wifi"></i> WiFi Networks</h2>
+                        <div class="panel-actions">
+                            <span class="refresh-btn" id="refresh-wifi">
+                                <i class="fas fa-sync"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="table-container">
+                            <table id="wifi-table">
+                                <thead>
+                                    <tr>
+                                        <th>SSID</th>
+                                        <th>Signal</th>
+                                        <th>Security</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="wifi-body">
+                                    <tr>
+                                        <td colspan="4" class="empty-row">No networks scanned yet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Bluetooth Devices Panel -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fab fa-bluetooth"></i> Bluetooth Devices</h2>
+                        <div class="panel-actions">
+                            <span class="refresh-btn" id="refresh-bluetooth">
+                                <i class="fas fa-sync"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="table-container">
+                            <table id="bluetooth-table">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>MAC Address</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="bluetooth-body">
+                                    <tr>
+                                        <td colspan="4" class="empty-row">No devices scanned yet</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Threats Panel -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-exclamation-triangle"></i> Detected Threats</h2>
+                        <div class="panel-actions">
+                            <span class="refresh-btn" id="refresh-threats">
+                                <i class="fas fa-sync"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="table-container">
+                            <table id="threats-table">
+                                <thead>
+                                    <tr>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                        <th>Device</th>
+                                        <th>Severity</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="threats-body">
+                                    <tr>
+                                        <td colspan="4" class="empty-row">No threats detected</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Logs Panel -->
+                <section class="panel">
+                    <div class="panel-header">
+                        <h2><i class="fas fa-terminal"></i> System Logs</h2>
+                        <div class="panel-actions">
+                            <span class="refresh-btn" id="clear-logs">
+                                <i class="fas fa-trash"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="logs-container" id="logs-container">
+                            <div class="log-entry">
+                                <span class="log-time">--:--:--</span>
+                                <span class="log-level info">INFO</span>
+                                <span class="log-message">Dashboard initialized. Ready for scanning.</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <p>Cybersecurity Dashboard v1.0</p>
+            </div>
+            <div class="footer-right">
+                <p>Last scan: <span id="last-scan-time">Never</span></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "cybersecurity-dashboard",
+  "version": "1.0.0",
+  "description": "Complete cybersecurity dashboard with real-time network scanning, threat detection, and alerting",
+  "main": "api/server.js",
+  "scripts": {
+    "start": "node api/server.js",
+    "dev": "nodemon api/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "node-wifi": "^2.0.16",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": [
+    "cybersecurity",
+    "network-scanner",
+    "threat-detection",
+    "dashboard"
+  ],
+  "author": "Cybersecurity Team",
+  "license": "MIT"
+}
