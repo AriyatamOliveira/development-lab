@@ -2,7 +2,7 @@
 
 RedWinged Tools is a free, educational multi-tool inspired by similar projects, focused on ethical learning in Cybersecurity, Pentesting, OSINT, and Network Scanning. (For educational purposes only. Compatible with macOS and Python 3.11.9.)
 
-Developed in Python by [Your Name or Handle], this tool is in English and optimized for macOS (e.g., version 14+ or equivalent to "Tahoe 26"). It is open-source for transparency, with no malware, backdoors, or harmful code. Updates can be made as needed. Free for educational use.
+Developed and Vibe-coded in Python by Ariyatam, this tool is in English and optimized for macOS (e.g., version 14+ or equivalent to "Tahoe 26"). It is open-source for transparency, with no malware, backdoors, or harmful code. Updates can be made as needed. Free for educational use.
 
 ## Disclaimer
 
