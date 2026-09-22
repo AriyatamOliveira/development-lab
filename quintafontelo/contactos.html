@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Quinta do Fontelo</title>
+    <meta name="description" content="Entre em contacto com a Quinta do Fontelo. Peça o seu orçamento para alojamento, eventos ou tours 4x4.">
+    <link rel="icon" href="https://quintafontelo.pt/wp-content/uploads/2025/06/cropped-wlogo-270x270.png" sizes="32x32">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="section-dark">
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="navbar-logo">
+                <img src="https://quintafontelo.pt/wp-content/uploads/2025/06/wlogo.png" alt="Quinta do Fontelo Logo">
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="espaco.html">Espaço</a>
+                <a href="servicos.html">O que oferecemos?</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="perto.html">Perto de nós</a>
+                <a href="contactos.html" style="color: var(--color-stone);">Contactos</a>
+                <a href="contactos.html" class="btn btn-primary" style="background-color: var(--color-stone); color: var(--color-dark);">Pedir Orçamento</a>
+            </div>
+            <button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </nav>
+
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <button class="mobile-nav-close"><i class="fa-solid fa-xmark"></i></button>
+        <a href="index.html">Início</a>
+        <a href="espaco.html">Espaço</a>
+        <a href="servicos.html">O que oferecemos?</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="perto.html">Perto de nós</a>
+        <a href="contactos.html">Contactos</a>
+        <a href="contactos.html" class="btn btn-primary" style="text-align: center; margin-top: 2rem;">Pedir Orçamento</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-page" style="background-color: var(--color-dark);">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-animate-title">Contactos</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section reveal" style="padding-top: 0;">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Left Col: Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <strong>Morada</strong>
+                        <p>Quinta do Fontelo, s/n<br>3670-151 Paços de Vilharigues<br>Vouzela – Portugal</p>
+                        <a href="https://maps.app.goo.gl/zvJYLiLiE53ksfCv9" target="_blank" style="color: var(--color-stone); font-size: 0.9rem;">Ver no Google Maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Email</strong>
+                        <div class="email-copy-wrap">
+                            <span class="email-text">momentosbyweekend@gmail.com</span>
+                            <button class="copy-email-btn" data-email="momentosbyweekend@gmail.com" aria-label="Copiar email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                            <span class="copy-confirm">Copiado!</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telefone</strong>
+                        <a href="tel:+351232778097">(+351) 232 778 097 <span class="caption" style="opacity: 0.5;">(rede fixa nacional)</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Telemóvel</strong>
+                        <a href="tel:+351961356029">(+351) 961 356 029 <span class="caption" style="opacity: 0.5;">(rede móvel nacional)</span></a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Horário</strong>
+                        <p>Todos os dias – 24h</p>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Informação Legal</strong>
+                        <p style="opacity: 0.7; font-size: 0.9rem;">Denominação Social: Momentos By Weekend, Lda<br>NIF: 518427072<br>Licença: 169298/AL</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Quinta-do-Fontelo-momentos-by-weekend-61571645879454" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/quintadofontelo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Right Col: Form -->
+                <div class="contact-form">
+                    <h2 style="font-size: 2rem; margin-bottom: var(--spacing-md); color: var(--color-stone);">Envie-nos uma mensagem</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Nome Completo *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Endereço de Email *" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Telefone">
+                        </div>
+                        <div class="form-group">
+                            <select id="assunto" name="assunto" required>
+                                <option value="" disabled selected>Assunto *</option>
+                                <option value="Alojamento">Alojamento</option>
+                                <option value="Eventos">Eventos</option>
+                                <option value="Tours 4x4">Tours 4x4</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" placeholder="A sua mensagem *" required></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacidade" name="privacidade" required>
+                            <label for="privacidade">Li e aceito a política de privacidade.</label>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map -->
+    <div class="map-container reveal">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.263595604473!2d-8.123855223321595!3d40.7121651389478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23396f9cba62e5%3A0xe542618fc272db4f!2sQuinta%20do%20Fontelo!5e0!3m2!1spt-PT!2spt!4v1700000000000!5m2!1spt-PT!2spt"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização da Quinta do Fontelo">
+        </iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding-top: var(--spacing-xl);">
+        <div class="container">
+            <div class="footer-top">
+                <img src="https://quintafontelo.pt/wp-content/uploads/2025/06/wlogo.png" alt="Quinta do Fontelo Logo" class="footer-logo" loading="lazy">
+            </div>
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Morada</h4>
+                    <p>Quinta do Fontelo, s/n<br>3670-151 Paços de Vilharigues<br>Vouzela – Portugal</p>
+                    <a href="https://maps.app.goo.gl/zvJYLiLiE53ksfCv9" target="_blank" style="display:inline-block; margin-top:0.5rem; border-bottom: 1px solid currentColor;">Ver no Google Maps</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contactos</h4>
+                    <p class="footer-email-wrap">
+                      momentosbyweekend@gmail.com
+                      <button class="copy-email-btn" data-email="momentosbyweekend@gmail.com" aria-label="Copiar email">
+                        <i class="fa-regular fa-copy"></i>
+                      </button>
+                      <span class="copy-confirm">Copiado!</span>
+                    </p>
+                    <p>(+351) 232 778 097 <span class="caption" style="opacity:0.6; display:inline;">Fixo</span></p>
+                    <p>(+351) 961 356 029 <span class="caption" style="opacity:0.6; display:inline;">Móvel</span></p>
+                    <p style="margin-top:0.5rem;">Todos os dias — 24h</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="espaco.html">O Espaço</a></li>
+                        <li><a href="servicos.html">O que oferecemos?</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="contactos.html">Contactos</a></li>
+                    </ul>
+                    <ul style="margin-top: 1rem; opacity: 0.8; font-size: 0.9rem;">
+                        <li><a href="#">Termos e Condições</a></li>
+                        <li><a href="#">Política de Privacidade</a></li>
+                        <li><a href="https://www.livroreclamacoes.pt/Inicio/" target="_blank">Livro de Reclamações</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links" style="margin-top:0; margin-bottom:1rem;">
+                    <a href="https://www.facebook.com/p/Quinta-do-Fontelo-momentos-by-weekend-61571645879454" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/quintadofontelo" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <p>&copy; Copyright 2026 - Momentos by Weekend</p>
+                <img src="https://quintafontelo.pt/wp-content/themes/vouchers/assets/images/BARRA_LOGOS-02.png" alt="Fundos Europeus" class="eu-logo" style="margin-top: 1rem;" loading="lazy">
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

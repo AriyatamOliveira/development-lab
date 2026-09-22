@@ -1,0 +1,24 @@
+[[redirects]]
+  from = "/espaco"
+  to = "/espaco.html"
+  status = 200
+
+[[redirects]]
+  from = "/servicos"
+  to = "/servicos.html"
+  status = 200
+
+[[redirects]]
+  from = "/eventos"
+  to = "/eventos.html"
+  status = 200
+
+[[redirects]]
+  from = "/perto"
+  to = "/perto.html"
+  status = 200
+
+[[redirects]]
+  from = "/contactos"
+  to = "/contactos.html"
+  status = 200
